@@ -1,7 +1,7 @@
 # Salifort
 
 ## Overview
-In this activity, our primary objective is to harness the power of Python for model building and data analysis to address a critical business challenge faced by Salifort Motors. We will deploy various models to analyze a dataset and generate valuable business insights for our stakeholders. The primary focus of our analysis is to predict employee turnover and understand the underlying factors contributing to it. Our analysis will serve as a foundation for developing strategies that can enhance employee retention, job satisfaction, and ultimately reduce the financial burden associated with high employee turnover.
+In this case study, our primary objective is to harness the power of Python for model building and data analysis to address a critical business challenge faced by Salifort Motors. We will deploy various models to analyze a dataset and generate valuable business insights for our stakeholders. The primary focus of our analysis is to predict employee turnover and understand the underlying factors contributing to it. Our analysis will serve as a foundation for developing strategies that can enhance employee retention, job satisfaction, and ultimately reduce the financial burden associated with high employee turnover.
 
 ## Business Understanding
 - Company Background:
