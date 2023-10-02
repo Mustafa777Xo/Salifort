@@ -67,6 +67,43 @@ In this section, we will provide an overview of the dataset "HR_capstone_dataset
  - Data Type: String
 
 ## Modeling and Evaluation
-<!-- ![](./Images/feature_imortance.png) -->
+So What’s likely to make the employee leave the company?
+The models and the feature importances extracted from the models confirm that employees at the company are overworked. 
+
+Since the variable we are seeking to predict is categorical, We could build either a logistic regression or a tree-based machine learning model.
+The random forest model slightly outperforms the decision tree model.
+
+- Decision Tree: Feature Importances for Employee Leaving :
+![](./Images/DS_Feature_importances.png)
+ Barplot above shows the most relevant variables: ‘last_evaluation’, ‘number_project’,  ‘tenure’ and ‘overworked’.
+
+- Random Forest: Feature Importances for Employee Leaving :
+![](./Images/RF_Feature_importances.png)
+ In the random forest model above, `last_evaluation`, `tenure`, `number_project`, `overworked`, `salary_low`, and `work_accident` have the highest importance. These variables are most helpful in predicting the outcome variable, `left`.
+
+
+- **Logistic Regression**
+
+The logistic regression model achieved precision of 80%, recall of 83%, f1-score of 80% (all weighted averages), and accuracy of 83%, on the test set.
+
+- **Tree-based Machine Learning**
+
+After conducting feature engineering, the decision tree model achieved AUC of 93.8%, precision of 87.0%, recall of 90.4%, f1-score of 88.7%, and accuracy of 96.2%, on the test set. The random forest modestly outperformed the decision tree model. 
 
 ## Conclusion
+In conclusion, the analysis and modeling efforts undertaken in this project have provided valuable insights into the challenge faced by Salifort Motors regarding employee turnover. We have successfully employed Python for model building and data analysis to address this critical business issue.
+
+Salifort Motors is concerned about the high rate of employee turnover, which is not only detrimental to the company's culture but also poses financial burdens. Our analysis has centered around predicting employee departures and understanding the driving factors behind them.
+
+We explored various approaches, including logistic regression and tree-based machine learning models such as decision trees and random forests. Among these, the random forest model demonstrated the best performance, achieving an AUC of 93.8%, precision of 87.0%, recall of 90.4%, f1-score of 88.7%, and an accuracy of 96.2% on the test set. This model identified key factors contributing to employee turnover, including last evaluation, tenure, number of projects, overwork, salary level, and work accidents.
+
+Our analysis and model building efforts provide Salifort Motors with a solid foundation to address the employee turnover issue. The insights gained from this project can guide the company's strategies to enhance employee retention, job satisfaction, and ultimately reduce the associated financial costs. By leveraging the power of data analysis and predictive modeling, Salifort Motors is better equipped to create a corporate culture that supports employee success and professional development while achieving significant cost savings.
+
+To retain employees, the following recommendations could be presented:
+
+* Cap the number of projects that employees can work on.
+* Consider promoting employees who have been with the company for atleast four years, or conduct further investigation about why four-year tenured employees are so dissatisfied. 
+* Either reward employees for working longer hours, or don't require them to do so. 
+* If employees aren't familiar with the company's overtime pay policies, inform them about this. If the expectations around workload and time off aren't explicit, make them clear. 
+* Hold company-wide and within-team discussions to understand and address the company work culture, across the board and in specific contexts. 
+* High evaluation scores should not be reserved for employees who work 200+ hours per month. Consider a proportionate scale for rewarding employees who contribute more/put in more effort. 
